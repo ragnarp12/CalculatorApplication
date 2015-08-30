@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<CheckBoxPreference
+    android:title="Vibrate on touch"
+    android:summary="Do vibrate wehn pushing a button"
+    android:key="vibrate"
+    android:defaultValue="false"/>
+</PreferenceScreen>
