@@ -3,6 +3,7 @@ package is.ru.ragnarp12.calculatorapplication;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Vibrator;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
@@ -36,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
         m_display = (TextView) findViewById(R.id.display);
         m_vibrate = (Vibrator) getApplicationContext().getSystemService(Context.VIBRATOR_SERVICE);
         m_sp = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+
+        Typeface type = Typeface.createFromAsset(getAssets(),"fonts/digital-7.ttf");
+        m_display.setTypeface(type);
 
     }
 
